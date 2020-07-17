@@ -57,3 +57,56 @@
     // }
     // mainFunction(67, 87, 98);
 
+
+        // Question 5
+    // function index_of(v, e){
+    //     for(i = 0; i < v.length; i++){
+    //         if(e === v[i]){
+    //             return i;
+    //         }
+    //     }
+    //     return null;
+    // }
+    // let word = "Zaime";
+    // let ele = "m";
+    // let iO = index_of(word, ele);
+    // document.write(iO ? `"${ele}" found at <b>${iO}</b> in "${word}"` : "Nothing Found");
+
+
+        // Question 6
+    // function delete_vowel(s){
+    //     s = s.toLowerCase()
+    //     let vowel = ["a", "e", "i", "o", "u"];
+    //     s = s.split("");
+    //     s = s.filter((value, index, arr) => {
+    //         return !vowel.includes(value);
+    //     });
+    //     s = s.join(" ");
+    //     document.write(s);
+    // }
+    // delete_vowel("I am 22 year old");
+
+        // Question 7
+    function succession(s){
+        s = s.toLowerCase();
+        s = s.split("");
+        let vowel = ["a", "e", "i", "o", "u"];
+        let isJoin = false;
+        let vowelJoin = "";
+
+        for(i = 0; i < s.length; i++){
+            // if(isJoin){
+            //     vowelJoin = "";
+            //     isJoin = false;
+            // }
+            if(vowel.includes(s[i])){
+                vowelJoin += s[i];
+                isJoin = true;
+            }
+            if(vowelJoin.length > 1){
+                console.log(vowelJoin);
+                vowelJoin = "";
+            }
+        }
+    }
+    succession("Pleases read this application and give me gratuity");
