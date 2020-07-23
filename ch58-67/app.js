@@ -71,10 +71,10 @@
     // console.log(parentContent[indexNum + 1]);
 
     // Part 6
-    let parentNode = document.getElementById('email').parentElement;
-    let nType = document.getElementById('email').nodeType;
-    document.write('Parent Node: ', parentNode);
-    document.write('<br>Node Type: ', nType);
+    // let parentNode = document.getElementById('email').parentElement;
+    // let nType = document.getElementById('email').nodeType;
+    // document.write('Parent Node: ', parentNode);
+    // document.write('<br>Node Type: ', nType);
 
 
     
